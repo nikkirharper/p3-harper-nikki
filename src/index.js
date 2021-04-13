@@ -1,5 +1,6 @@
-import { header } from './modules/header'
-import { footer } from './modules/footer'
+import "./styles.css";
+import { header } from './modules/header'; 
+import { footer } from './modules/footer'; 
 
 
 class App {
@@ -9,10 +10,12 @@ class App {
 
     renderTemplate() {
         const template = `
-            <header>
-                <h1>${header.pageTitle}</h1>
-                <button>${header.randomizerButton}</button>
-            </header>
+            <div id="header-wrapper">
+                <header>
+                    <h1>${header.pageTitle}</h1>
+                    <button>${header.randomizerButton}</button>
+                </header>
+            </div>
             <footer>
                 <h2>${footer.footerText}</2>
             </footer>
