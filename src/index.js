@@ -1,4 +1,5 @@
 import "./styles.css";
+import BowlImage from './images/bowl.jpg';
 import { header } from './modules/header'; 
 import { footer } from './modules/footer'; 
 
@@ -18,12 +19,12 @@ class App {
             </div>
             <main>
                 <figure>
-                    <img src="../images/bowl.jpg">
+                    <img src=${BowlImage}>
                     <figcaption>What's for Lunch?<figcaption>
                 </figure>
             </main>
             <footer>
-                <h2>${footer.footerText}</2>
+                <h2>${footer.footerText}</h2>
             </footer>
             `;
 
