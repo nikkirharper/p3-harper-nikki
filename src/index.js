@@ -16,6 +16,12 @@ class App {
                     <button>${header.randomizerButton}</button>
                 </header>
             </div>
+            <main>
+                <figure>
+                    <img src="../images/bowl.jpg">
+                    <figcaption>What's for Lunch?<figcaption>
+                </figure>
+            </main>
             <footer>
                 <h2>${footer.footerText}</2>
             </footer>
