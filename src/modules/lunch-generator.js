@@ -1,62 +1,97 @@
+import BurgerImage from '../images/burger.jpg';
+const burgerImage = new Image(); 
+burgerImage.src = BurgerImage; 
+import PastaImage from '../images/pasta.jpg';
+const pastaImage = new Image(); 
+pastaImage.src = PastaImage; 
+import PizzaImage from '../images/pizza.jpg';
+const pizzaImage = new Image(); 
+pizzaImage.src = PizzaImage; 
+import PokeImage from '../images/poke.jpg';
+const pokeImage = new Image(); 
+pokeImage.src = PokeImage; 
+import QuesadillaImage from '../images/quesadilla.jpg';
+const quesadillaImage = new Image(); 
+quesadillaImage.src = QuesadillaImage;
+import SaladImage from '../images/salad.jpg';
+const saladImage = new Image(); 
+saladImage.src = SaladImage; 
+import SandwichImage from '../images/sandwich.jpg';
+const sandwichImage = new Image(); 
+sandwichImage.src = SandwichImage; 
+import SoupImage from '../images/soup.jpg';
+const soupImage = new Image(); 
+soupImage.src = SoupImage;
+import SushiImage from '../images/sushi.jpg';
+const sushiImage = new Image(); 
+sushiImage.src = SushiImage;
+import TacosImage from '../images/tacos.jpg';
+const tacosImage = new Image(); 
+tacosImage.src = TacosImage;
+let rand_int = Math.floor(Math.random() * 10);
+
+
 const lunch = [
     {
       text: "Turkey Burger with Cheese",
-      img:  "../images/burger.jpg"
+      img:  burgerImage,
     },
     {
       text: "Spaghetti with Vegetable Marinara",
-      img:  "../images/pasta.jpg",
+      img:  pastaImage,
     },
     {
       text: "BBQ Chicken Pizza with Pineapple",
-      img:  "../images/pizza.jpg",
+      img:  pizzaImage,
     },
     {
       text: "Salmon Poke Bowl",
-      img:  "../images/poke.jpg",
+      img:  pokeImage,
     },
     {
       text: "Black Bean & Corn Quesadilla",
-      img:  "../images/quesadilla.jpg",
+      img:  quesadillaImage,
     },
     {
        text: "Shrimp Caesar Salad",
-       img:  "../images/salad.jpg",
+       img:  saladImage,
     },
     {
        text: "Italian Sandwich on fresh Baguette",
-       img:  "../images/sandwich.jpg",
+       img:  sandwichImage,
     },
     {
        text: "Tomato Soup with Fresh Basil",
-       img:  "../images/soup.jpg",
+       img:  soupImage,
     },
     {
        text: "Dragon Sushi Roll",
-       img:  "../images/sushi.jpg",
+       img:  sushiImage,
     },
     {
        text: "Chicken Street Tacos",
-       img:  "../images/tacos.jpg",
+       img:  tacosImage,
     },
   ];
-
     
     class LunchGenerator {
         constructor() {
             this.randomizeLunches();
+            this.showResults(); 
         }
-    }; 
 
-    randomizeLunches () => {
-        let i, j, k;
-          for (i = lunch.length -1; i > 0; i--) {
-            j = Math.floor(Math.random() * i)
-            k = lunch[i]
-            lunch[i] = lunch[j]
-            lunch[j] = k
-          }
-          document.getElementById("quote").innerHTML = quotes[0];
-        }; 
+        randomizeLunches () {
+            
+        }
+    }
+
+
+
     
-        button.addEventListener("click", randomizeQuotes); 
+    // showResults() => {
+
+    //     };  
+    
+         
+
+export const lunchgenerator = new LunchGenerator(lunch[rand_int].text, lunch[rand_int].img);

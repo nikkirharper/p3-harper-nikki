@@ -1,26 +1,31 @@
 import "./styles.css";
 import BowlImage from './images/bowl.jpg';
-import { header } from './modules/header'; 
-import { footer } from './modules/footer'; 
+import { header } from './modules/header';
+import { lunchgenerator } from './modules/lunch-generator'; 
+import { footer } from './modules/footer';
+const button = template.getElementById("button");
 
 
 class App {
     constructor() {
-        this.renderTemplate();  
+        this.renderTemplate();
+        lunchgenerator.randomizeLunches(); 
     }
+
+    // button.addEventListener("click", randomizeLunches);
 
     renderTemplate() {
         const template = `
             <div id="header-wrapper">
                 <header>
                     <h1>${header.pageTitle}</h1>
-                    <button>${header.randomizerButton}</button>
+                    <button id="button">${header.randomizerButton}</button>
                 </header>
             </div>
             <main>
                 <figure>
                     <img src=${BowlImage}>
-                    <figcaption>What's for Lunch?<figcaption>
+                    <figcaption id="description">What's for Lunch?<figcaption>
                 </figure>
             </main>
             <footer>
