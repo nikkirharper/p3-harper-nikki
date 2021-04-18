@@ -1,74 +1,43 @@
-import BurgerImage from '../images/burger.jpg';
-const burgerImage = new Image(); 
-burgerImage.src = BurgerImage;
-import PastaImage from '../images/pasta.jpg';
-const pastaImage = new Image(); 
-pastaImage.src = PastaImage; 
-import PizzaImage from '../images/pizza.jpg';
-const pizzaImage = new Image(); 
-pizzaImage.src = PizzaImage; 
-import PokeImage from '../images/poke.jpg';
-const pokeImage = new Image(); 
-pokeImage.src = PokeImage; 
-import QuesadillaImage from '../images/quesadilla.jpg';
-const quesadillaImage = new Image(); 
-quesadillaImage.src = QuesadillaImage;
-import SaladImage from '../images/salad.jpg';
-const saladImage = new Image(); 
-saladImage.src = SaladImage; 
-import SandwichImage from '../images/sandwich.jpg';
-const sandwichImage = new Image(); 
-sandwichImage.src = SandwichImage; 
-import SoupImage from '../images/soup.jpg';
-const soupImage = new Image(); 
-soupImage.src = SoupImage;
-import SushiImage from '../images/sushi.jpg';
-const sushiImage = new Image(); 
-sushiImage.src = SushiImage;
-import TacosImage from '../images/tacos.jpg';
-const tacosImage = new Image(); 
-tacosImage.src = TacosImage;
-
-export const lunch = [
+const lunch = [
     {
       text: "Turkey Burger with Cheese",
-      img:  burgerImage,
+      img:  "images/burger.jpg",
     },
     {
       text: "Spaghetti with Vegetable Marinara",
-      img:  pastaImage,
+      img:  "images/pasta.jpg",
     },
     {
       text: "BBQ Chicken Pizza with Pineapple",
-      img:  pizzaImage,
+      img:  "images/pizza.jpg",
     },
     {
       text: "Salmon Poke Bowl",
-      img:  pokeImage,
+      img:  "images/poke.jpg",
     },
     {
       text: "Black Bean & Corn Quesadilla",
-      img:  quesadillaImage,
+      img:  "images/quesadilla.jpg",
     },
     {
        text: "Shrimp Caesar Salad",
-       img:  saladImage,
+       img:  "images/salad.jpg",
     },
     {
        text: "Italian Sandwich on fresh Baguette",
-       img:  sandwichImage,
+       img:  "images/sandwich.jpg",
     },
     {
        text: "Tomato Soup with Fresh Basil",
-       img:  soupImage,
+       img:  "images/soup.jpg",
     },
     {
        text: "Dragon Sushi Roll",
-       img:  sushiImage,
+       img:  "images/sushi.jpg",
     },
     {
        text: "Chicken Street Tacos",
-       img:  tacosImage,
+       img:  "images/tacos.jpg",
     },
   ];
     
@@ -87,9 +56,11 @@ export const lunch = [
                 }
         }
 
-        showResult() {
+        showResult() { 
           document.getElementById('button').addEventListener('click', () => {
+            this.randomizeLunches();
             document.getElementById('description').innerHTML = lunch[0].text;
+            document.getElementById('lunch-image').src = lunch[0].img;
           });
         }
     }

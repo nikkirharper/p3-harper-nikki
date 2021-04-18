@@ -22,7 +22,7 @@ class App {
             </div>
             <main>
                 <figure>
-                    <img id="lunch-image" src=${BowlImage}>
+                    <img id="lunch-image" src="${BowlImage}">
                     <figcaption id="description">What's for Lunch?</figcaption>
                 </figure>
             </main>
