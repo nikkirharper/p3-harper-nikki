@@ -70,6 +70,14 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
     font-weight: 300;
     font-style: normal;
   }
+
+  /* #description {
+    display: none; 
+  }
+
+  #show {
+    display: block; 
+  } */
      
   footer {
     background-color: #1e1915;

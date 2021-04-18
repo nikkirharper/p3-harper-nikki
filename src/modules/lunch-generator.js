@@ -1,6 +1,6 @@
 import BurgerImage from '../images/burger.jpg';
 const burgerImage = new Image(); 
-burgerImage.src = BurgerImage; 
+burgerImage.src = BurgerImage;
 import PastaImage from '../images/pasta.jpg';
 const pastaImage = new Image(); 
 pastaImage.src = PastaImage; 
@@ -28,10 +28,8 @@ sushiImage.src = SushiImage;
 import TacosImage from '../images/tacos.jpg';
 const tacosImage = new Image(); 
 tacosImage.src = TacosImage;
-let rand_int = Math.floor(Math.random() * 10);
 
-
-const lunch = [
+export const lunch = [
     {
       text: "Turkey Burger with Cheese",
       img:  burgerImage,
@@ -74,24 +72,21 @@ const lunch = [
     },
   ];
     
-    class LunchGenerator {
-        constructor() {
-            this.randomizeLunches();
-            this.showResults(); 
+    export default class LunchGenerator {
+        constructor(showDescription, showImage) {
+            this.showDescription = showDescription; 
+            this.showImage = showImage; 
         }
 
-        randomizeLunches () {
-            
+        randomizeLunches() {
+                let i, j, k;
+                  for (i = lunch.length -1; i > 0; i--) {
+                    j = Math.floor(Math.random() * i)
+                    k = lunch[i]
+                    lunch[i] = lunch[j]
+                    lunch[j] = k
+                }
         }
     }
 
-
-
-    
-    // showResults() => {
-
-    //     };  
-    
-         
-
-export const lunchgenerator = new LunchGenerator(lunch[rand_int].text, lunch[rand_int].img);
+export const lunchGenerator = new LunchGenerator(lunch[0].text, lunch[0].img);
