@@ -73,9 +73,8 @@ export const lunch = [
   ];
     
     export default class LunchGenerator {
-        constructor(showDescription, showImage) {
-            this.showDescription = showDescription; 
-            this.showImage = showImage; 
+        constructor() {
+            this.randomizeLunches(); 
         }
 
         randomizeLunches() {
@@ -87,6 +86,12 @@ export const lunch = [
                     lunch[j] = k
                 }
         }
+
+        showResult() {
+          document.getElementById('button').addEventListener('click', () => {
+            document.getElementById('description').innerHTML = lunch[0].text;
+          });
+        }
     }
 
-export const lunchGenerator = new LunchGenerator(lunch[0].text, lunch[0].img);
+export const lunchGenerator = new LunchGenerator();
