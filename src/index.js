@@ -1,5 +1,5 @@
 import "./styles.css";
-import BowlImage from './images/bowl.jpg';
+import BowlImage from 'images/bowl.jpg';
 import { header } from './modules/header';
 import { lunchGenerator } from './modules/lunch-generator'; 
 import { footer } from './modules/footer';
