@@ -13,18 +13,20 @@ class App {
 
     renderTemplate() {
         const template = `
-            <div id="header-wrapper">
-                <header>
-                    <h1>${header.pageTitle}</h1>
-                    <button id="button">${header.randomizerButton}</button>
-                </header>
+            <div id="container">
+                <div id="header-wrapper">
+                    <header>
+                        <h1>${header.pageTitle}</h1>
+                        <button id="button">${header.randomizerButton}</button>
+                    </header>
+                </div>
+                <main>
+                    <figure>
+                        <img id="lunch-image" src="../images/bowl.jpg">
+                        <figcaption id="description">What's for Lunch?</figcaption>
+                    </figure>
+                </main>
             </div>
-            <main>
-                <figure>
-                    <img id="lunch-image" src="../images/bowl.jpg">
-                    <figcaption id="description">What's for Lunch?</figcaption>
-                </figure>
-            </main>
             <footer>
                 <h2>${footer.footerText}</h2>
             </footer>

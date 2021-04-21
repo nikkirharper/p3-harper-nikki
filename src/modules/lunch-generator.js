@@ -41,28 +41,28 @@ const lunch = [
     },
   ];
     
-    export default class LunchGenerator {
-        constructor() {
-            this.randomizeLunches(); 
-        }
-
-        randomizeLunches() {
-                let i, j, k;
-                  for (i = lunch.length -1; i > 0; i--) {
-                    j = Math.floor(Math.random() * i)
-                    k = lunch[i]
-                    lunch[i] = lunch[j]
-                    lunch[j] = k
-                }
-        }
-
-        showResult() { 
-          document.getElementById('button').addEventListener('click', () => {
-            this.randomizeLunches();
-            document.getElementById('description').innerHTML = lunch[0].text;
-            document.getElementById('lunch-image').src = lunch[0].img;
-          });
-        }
+class LunchGenerator {
+    constructor() {
+        this.randomizeLunches(); 
     }
+
+    randomizeLunches() {
+            let i, j, k;
+              for (i = lunch.length -1; i > 0; i--) {
+                j = Math.floor(Math.random() * i)
+                k = lunch[i]
+                lunch[i] = lunch[j]
+                lunch[j] = k
+            }
+    }
+
+    showResult() { 
+      document.getElementById('button').addEventListener('click', () => {
+        this.randomizeLunches();
+        document.getElementById('description').innerHTML = lunch[0].text;
+        document.getElementById('lunch-image').src = lunch[0].img;
+      });
+    }
+}
 
 export const lunchGenerator = new LunchGenerator();
