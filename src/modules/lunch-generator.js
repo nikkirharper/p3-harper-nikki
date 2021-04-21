@@ -1,43 +1,43 @@
 const lunch = [
     {
       text: "Turkey Burger with Cheese",
-      img:  "images/burger.jpg",
+      img:  "../images/burger.jpg",
     },
     {
       text: "Spaghetti with Vegetable Marinara",
-      img:  "images/pasta.jpg",
+      img:  "../images/pasta.jpg",
     },
     {
       text: "BBQ Chicken Pizza with Pineapple",
-      img:  "images/pizza.jpg",
+      img:  "../images/pizza.jpg",
     },
     {
       text: "Salmon Poke Bowl",
-      img:  "images/poke.jpg",
+      img:  "../images/poke.jpg",
     },
     {
       text: "Black Bean & Corn Quesadilla",
-      img:  "images/quesadilla.jpg",
+      img:  "../images/quesadilla.jpg",
     },
     {
        text: "Shrimp Caesar Salad",
-       img:  "images/salad.jpg",
+       img:  "../images/salad.jpg",
     },
     {
        text: "Italian Sandwich on fresh Baguette",
-       img:  "images/sandwich.jpg",
+       img:  "../images/sandwich.jpg",
     },
     {
        text: "Tomato Soup with Fresh Basil",
-       img:  "images/soup.jpg",
+       img:  "../images/soup.jpg",
     },
     {
        text: "Dragon Sushi Roll",
-       img:  "images/sushi.jpg",
+       img:  "../images/sushi.jpg",
     },
     {
        text: "Chicken Street Tacos",
-       img:  "images/tacos.jpg",
+       img:  "../images/tacos.jpg",
     },
   ];
     

@@ -11,7 +11,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 }
 
 #header-wrapper {
-    background-image: url(./images/fork.jpg);
+    background-image: url(../images/fork.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -70,14 +70,6 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
     font-weight: 300;
     font-style: normal;
   }
-
-  /* #description {
-    display: none; 
-  }
-
-  #show {
-    display: block; 
-  } */
      
   footer {
     background-color: #1e1915;

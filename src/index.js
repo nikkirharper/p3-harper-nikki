@@ -1,5 +1,4 @@
 import "./styles.css";
-import BowlImage from 'images/bowl.jpg';
 import { header } from './modules/header';
 import { lunchGenerator } from './modules/lunch-generator'; 
 import { footer } from './modules/footer';
@@ -22,7 +21,7 @@ class App {
             </div>
             <main>
                 <figure>
-                    <img id="lunch-image" src="${BowlImage}">
+                    <img id="lunch-image" src="../images/bowl.jpg">
                     <figcaption id="description">What's for Lunch?</figcaption>
                 </figure>
             </main>
